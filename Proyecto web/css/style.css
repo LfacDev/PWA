@@ -271,6 +271,128 @@ iframe {
     margin-bottom: 2%;
 }
 
+/* ------------FORMULARIO--------------------- */
+.form {
+
+    width: 40%;    
+    height: auto;
+    display: inline-block;
+    padding: 20px 5px;
+    text-align: center;
+    border: 1px solid #4b4949;
+    
+    }
+    
+.form * {
+    display: inline-block;
+    width: 85%;
+    margin: 1% 0;
+    font-size: 20px;
+}
+    
+.form > h3 {
+    font-size: 24px;
+}
+    
+.form > input {
+    padding: 10px 2px;
+    border: none;
+    border-bottom: 1px solid #ff004e;
+    outline: none;
+}
+    
+.form > label {
+    text-align: left;
+    padding: 5px;
+}
+
+/* -------------------CHECKBOX---------------------------- */
+
+input[type="checkbox"]{
+    visibility: hidden;
+}
+
+.labelPolitica{
+    width: 50%;
+    display: inline-block;
+    
+}
+
+.check{
+    display: inline-block;
+    position: relative; /* funciona cuando a esas 4 propiedades (left, right, bottom y top le doy valor  */
+    margin: 3%;
+    width: 24%;
+    height: 40px;
+    background-color: #ff004a;
+    border-radius: 10px;
+}
+
+.check label{
+
+    /* ASPECTO DEL ELEMENTO */
+    display: block;
+    width: 43%;
+    height: 70%;
+    border-radius: 10px;
+    box-shadow: 8px 2px 5px 0px rgba(0,0,0,0.35);
+    background: linear-gradient(to top, #fcfff4 3%, #d9d8d2 40%, #b3bead 100%);
+    cursor: pointer;
+    /* POSICION */
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    /* Comportamiento */
+    transition: all 1.5s ease;
+}
+
+input[type="checkbox"]:checked + label{
+    left: auto;
+    right: 8px;
+}
+
+.check:after{
+    content: "NO";
+    color: #ffd1dc;
+    margin: 2.5%;
+    position: absolute;
+    right: 9px;
+    z-index: 0;
+    font-size: 7px Arial;
+    font-weight: bold;
+
+}
+
+.check:before{
+    content: "SI";
+    color: #ffd1dc;
+    margin: 2.5%;
+    position: absolute;
+    left: 10px;
+    z-index: 0;
+    font-size: 8px Arial;
+    font-weight: bold;
+
+}
+
+.button_send,.button_clear {
+    display: inline;
+    width: 30%;
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    padding: 4%;
+    background-color: #ffd1dc;
+    border: 1px solid #ffd1dc;
+    border-radius: 5%;
+    color: #4b4949;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
 
 /* ------------------ FOOTER ------------------------------ */
 .footer {
@@ -307,6 +429,6 @@ iframe {
 }
 
 .nets {
-    width: 40px;
+    width: 50px;
 }
   
